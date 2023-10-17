@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/app/[lang]/page.jsx",
+    "src/app/[lang]/layout.jsx",
+    "src/app/[lang]/dashboard/page.jsx",
+    "src/app/[lang]/dashboard/layout.jsx",
+    "src/app/[lang]/starred/page.jsx",
+    "src/app/[lang]/tasks/page.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
