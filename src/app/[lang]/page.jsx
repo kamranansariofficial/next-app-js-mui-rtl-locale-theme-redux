@@ -4,7 +4,13 @@ import Container from "@mui/material/Container";
 import MediaCard from "@/components/MediaCard";
 import { getDictionary } from "get-dictionary";
 
-export default async function IndexPage({ params: { lang } }) {
+export default async function IndexPage(props) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
   const dictionary = await getDictionary(lang);
 
   return (
